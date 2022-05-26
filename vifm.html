@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vifm member-bios/</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
+    <style>
+input {
+  display:none;
+}
+a {
+  color: #7491a1;
+  text-decoration: none
+}
+footer a:any-link {color: rgba(12, 12, 12, 0.96); font-weight: bold;}
+footer a:any-link:hover {color: #4d6c79}
+#container {
+  display:flex;
+  flex-direction: row;
+  height:700px;
+  padding-left: 0.5em;
+  background: black;
+}
+#left {
+  width: 50%;
+  font-weight: bold;
+}
+#left a {white-space:pre; text-decoration: none;}
+#right {
+  
+}
+#right div {display:none;}
+
+a.vrixy:hover {background: rgba(12, 12, 12, 0.96); color: #ff6ff2;}
+input#vrixy-nav:checked ~ #right .vrixy-bio {display:block}
+input#vrixy-nav:checked ~ #left .vrixy {background: #ff6ff2; color: rgba(12, 12, 12, 0.96);}
+
+a.kamacite:hover {background: rgba(12, 12, 12, 0.96); color: #75130e;}
+input#kamacite-nav:checked ~ #right .kamacite-bio {display:block}
+input#kamacite-nav:checked ~ #left .kamacite {background: #75130e; color: rgba(12, 12, 12, 0.96);}
+
+a.cio:hover {background: rgba(12, 12, 12, 0.96); color: #199499;text-decoration: none}
+input#cio-nav:checked ~ #right .cio-bio {display:block}
+input#cio-nav:checked ~ #left .cio {background: #199499; color: rgba(12, 12, 12, 0.96);text-decoration: none}
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+      <header><strong> ~/member-bios</strong></header>
+      <div id="container">
+      
+        <input type=radio id="vrixy-nav" name="group">
+        <input type=radio id="kamacite-nav" name="group">
+        <input type=radio id="cio-nav" name="group">
+        
+        <div id="left">
+          <a href="https://lipumeteorite.neocities.org"> ../</a><br>
+          <a class="vrixy"><label for="vrixy-nav"> vriska roxy noises maryam-lalonde^2 </label></a><br>
+          <a class="kamacite"><label for="kamacite-nav"> kamacite </label></a><br>
+          <a class="cio"><label for="cio-nav"> Ciocie Cioelle Estrella Von Maximus III </label></a><br>
+        </div>
+        
+        <div id="right">
+          <div class="txt vrixy-bio">
+          weed vriska<br>
+          </div>
+          
+          <div class="txt kamacite-bio">
+          little cra8
+          </div>
+          
+          <div class="txt cio-bio">
+          cool devil =:>
+          </div>
+        </div>
+        
+      </div>
+      <footer> Hint: sonic the hedgehog is cool</footer>
+      </article>
+    </main>
+  </body>
+</html>

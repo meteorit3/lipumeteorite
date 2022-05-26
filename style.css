@@ -1,0 +1,80 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-image: url('schwarz.jpg');
+  background-size: calc(max(100%, 1300px));
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position: center center; /*I CANT DECIDE WHETHER CENTER CENTER OR CENTER TOP LOOKS BETTER.*/
+  font-family: Verdana;
+}
+main {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 85%;
+  max-width: 1200px;
+  background: rgb(12, 12, 12);
+  background: rgba(12, 12, 12, 0.96);
+  margin-top: 30px;
+  border-radius: 0px;
+  border: 2px #c44457 solid;
+}
+article {
+  padding: 1em;
+  font-family: 'Inconsolata', monospace;
+  font-size: large;
+  color: #81957c;
+}
+header {
+  background: #909090;
+  color: rgba(12, 12, 12, 0.96);
+  white-space: pre;
+}
+footer {
+  background: #909090;
+  color: rgba(12, 12, 12, 0.96);
+  white-space: pre;
+}
+@media (max-width: 1000px) { article {font-size: medium} #fetch {flex-wrap: wrap}}
+
+.tui {
+  list-style-type: "\279C";
+  list-style-position: inside;
+  color: #81957c;
+  text-align: left;
+}
+.dir {
+  color: #4d6c79;
+  padding-left: 2em;
+  padding-right: 0.5em
+}
+.txt {color: #d2c5bc;}
+.comment {color: #665e60;}
+#fetch {
+  display:flex;
+  flex-direction:row;
+  flex: 200px;
+  padding: 0;
+}
+#asciistars {
+  white-space: pre;
+  color: #fae3a0;
+  padding: 0px;
+  margin: 0px;
+}
+#sysbio {
+  color: #f9bb80;
+}
+#members { 
+  font-weight: bold;
+  list-style-type: none;
+  color: #7491a1;
+}
+a:link {color: #7491a1;text-decoration: none}
+a:visited {color: #4d6c79;text-decoration: none}
+a:any-link:hover {color: #d84b0f;text-decoration: underline}
+

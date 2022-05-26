@@ -26,8 +26,9 @@ main {
 article {
   padding: 1em;
   font-family: 'Inconsolata', monospace;
-  font-size: large;
+  font-size: medium;
   color: #81957c;
+  line-height: 16px;
 }
 header {
   background: #909090;
@@ -39,7 +40,11 @@ footer {
   color: rgba(12, 12, 12, 0.96);
   white-space: pre;
 }
-@media (max-width: 1000px) { article {font-size: medium} #fetch {flex-wrap: wrap}}
+iframe {
+  border: none;
+  color: white;
+}
+@media (max-width: 1000px) { article {font-size: small} #fetch {flex-wrap: wrap}}
 
 .tui {
   list-style-type: "\279C";
